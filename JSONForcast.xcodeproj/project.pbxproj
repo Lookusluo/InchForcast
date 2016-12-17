@@ -23,7 +23,7 @@
 		C326E7231DFFBC2B00DD235B /* HourlyTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C326E7221DFFBC2B00DD235B /* HourlyTableController.m */; };
 		C326E7261DFFBC8400DD235B /* HourlyTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C326E7251DFFBC8400DD235B /* HourlyTableCell.m */; };
 		C326E7291DFFBC9400DD235B /* DailyTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C326E7281DFFBC9400DD235B /* DailyTableCell.m */; };
-		C33837CB1E00ED320051B491 /* start.gif in Resources */ = {isa = PBXBuildFile; fileRef = C33837CA1E00ED320051B491 /* start.gif */; };
+		C32F46071E04FD9A007E36F0 /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F46061E04FD9A007E36F0 /* UIImageView+GIF.m */; };
 		C33837CD1E0121790051B491 /* windMill.gif in Resources */ = {isa = PBXBuildFile; fileRef = C33837CC1E0121790051B491 /* windMill.gif */; };
 		C3D43BB71E0372BD00BD2583 /* clear-day.gif in Resources */ = {isa = PBXBuildFile; fileRef = C3D43BB41E0372BD00BD2583 /* clear-day.gif */; };
 		C3D43BB81E0372BD00BD2583 /* clear-night.gif in Resources */ = {isa = PBXBuildFile; fileRef = C3D43BB51E0372BD00BD2583 /* clear-night.gif */; };
@@ -58,7 +58,8 @@
 		C326E7251DFFBC8400DD235B /* HourlyTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourlyTableCell.m; sourceTree = "<group>"; };
 		C326E7271DFFBC9400DD235B /* DailyTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyTableCell.h; sourceTree = "<group>"; };
 		C326E7281DFFBC9400DD235B /* DailyTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyTableCell.m; sourceTree = "<group>"; };
-		C33837CA1E00ED320051B491 /* start.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = start.gif; sourceTree = "<group>"; };
+		C32F46051E04FD9A007E36F0 /* UIImageView+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GIF.h"; sourceTree = "<group>"; };
+		C32F46061E04FD9A007E36F0 /* UIImageView+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GIF.m"; sourceTree = "<group>"; };
 		C33837CC1E0121790051B491 /* windMill.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = windMill.gif; sourceTree = "<group>"; };
 		C3D43BB41E0372BD00BD2583 /* clear-day.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "clear-day.gif"; sourceTree = "<group>"; };
 		C3D43BB51E0372BD00BD2583 /* clear-night.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "clear-night.gif"; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		C302A5321E02755100DCEB73 /* GIF */ = {
 			isa = PBXGroup;
 			children = (
-				C33837CA1E00ED320051B491 /* start.gif */,
 				C33837CC1E0121790051B491 /* windMill.gif */,
 				C3D43BBA1E0372CC00BD2583 /* partly-cloudy-day.gif */,
 				C3D43BB41E0372BD00BD2583 /* clear-day.gif */,
@@ -124,6 +124,8 @@
 				C302A5321E02755100DCEB73 /* GIF */,
 				C326E7101DFF44CB00DD235B /* Assets.xcassets */,
 				C326E70D1DFF44CB00DD235B /* Main.storyboard */,
+				C32F46051E04FD9A007E36F0 /* UIImageView+GIF.h */,
+				C32F46061E04FD9A007E36F0 /* UIImageView+GIF.m */,
 				C326E7121DFF44CB00DD235B /* LaunchScreen.storyboard */,
 				C326E7151DFF44CB00DD235B /* Info.plist */,
 				C326E7041DFF44CB00DD235B /* Supporting Files */,
@@ -229,7 +231,6 @@
 				C3D43BB81E0372BD00BD2583 /* clear-night.gif in Resources */,
 				C3D43BBB1E0372CC00BD2583 /* partly-cloudy-day.gif in Resources */,
 				C3D43BB71E0372BD00BD2583 /* clear-day.gif in Resources */,
-				C33837CB1E00ED320051B491 /* start.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +248,7 @@
 				C326E7261DFFBC8400DD235B /* HourlyTableCell.m in Sources */,
 				C326E7201DFFBC1500DD235B /* DailyTableController.m in Sources */,
 				C326E7291DFFBC9400DD235B /* DailyTableCell.m in Sources */,
+				C32F46071E04FD9A007E36F0 /* UIImageView+GIF.m in Sources */,
 				C326E7061DFF44CB00DD235B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
