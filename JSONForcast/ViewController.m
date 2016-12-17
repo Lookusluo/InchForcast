@@ -74,11 +74,13 @@
                                                              //Do nothing
                                                          }];
     [alarm addTextFieldWithConfigurationHandler:^(UITextField *_Nonnull textField){(
-                                                                                    textField.placeholder = @"Latitude"
+                                                                                    textField.placeholder = @"Latitude"),
+                                                                                    ([textField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation]
                                                                                     );
     }];
     [alarm addTextFieldWithConfigurationHandler:^(UITextField *_Nonnull textField){(
-                                                                                    textField.placeholder = @"Longitude"
+                                                                                    textField.placeholder = @"Longitude"),
+                                                                                    ([textField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation]
                                                                                     );
     }];
     

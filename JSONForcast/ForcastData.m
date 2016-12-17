@@ -97,6 +97,8 @@
                 {
                     //read data
                     NSMutableDictionary *dailydic = [NSMutableDictionary dictionaryWithDictionary:[dic objectForKey:@"daily"]];
+                    NSString *weekSummary = [dailydic objectForKey:@"summary"];
+                    
                     NSMutableArray *detailArray = [[dailydic objectForKey:@"data"]mutableCopy];
                     NSMutableDictionary *detailDic = [[detailArray objectAtIndex:0 ]mutableCopy];//total 8 day, current, 2, 3, 4, 5, 6, 7
                     //Convert time and rewrite data
@@ -111,6 +113,7 @@
                     NSString *risetimeStr = [NSString stringWithFormat:@"%02ld:%02ld",(long)riseComponents.hour,(long)riseComponents.minute];
                     NSString *settimeStr = [NSString stringWithFormat:@"%02ld:%02ld",(long)setComponents.hour,(long)setComponents.minute];
 
+                    [detailDic setObject:weekSummary forKey:@"weekSummary"];
                     [detailDic setObject:risetimeStr forKey:@"sunriseTime"];
                     [detailDic setObject:settimeStr forKey:@"sunsetTime"];
                     [detailArray replaceObjectAtIndex:0 withObject:detailDic];
